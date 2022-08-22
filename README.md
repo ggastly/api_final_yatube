@@ -1,5 +1,5 @@
 # REST API для проекта Yatube
-## Реализована атуентификация по JWT-токену
+### Реализована атуентификация по JWT-токену
 ### Как запустить проект:
 
 Клонировать репозиторий и перейти в него в командной строке:
@@ -23,17 +23,19 @@ source env/bin/activate
 ```
 
 Установить зависимости из файла requirements.txt:
-
 ```
 python3 -m pip install --upgrade pip
 ```
-
 ```
 pip install -r requirements.txt
 ```
+Создать в проекте файл .env, в нем указать SECRET_KEY="любой плейсхолдер".
 
+Зайти в папку с файлом manage.py:
+```
+cd api_yamdb
+```
 Выполнить миграции:
-
 ```
 python3 manage.py migrate
 ```
